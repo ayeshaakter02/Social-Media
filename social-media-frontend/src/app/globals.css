@@ -1,3 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer components {
+  .poppins {
+    font-family: var(--font-poppins);
+  }
+  .inter {
+    font-family: var(--font-inter);
+  }
+  .menu{
+    @apply font-poppins font-bold text-sm text-white
+  }
+}

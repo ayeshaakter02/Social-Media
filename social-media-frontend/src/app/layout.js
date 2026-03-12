@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} ${inter.variable} antialiased`}
       >
-
         {children}
       </body>
     </html>
