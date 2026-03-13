@@ -15,4 +15,7 @@
   .menu{
     @apply font-poppins font-bold text-sm text-white
   }
+  .profile-menu {
+    @apply max-w-67 flex items-center hover:bg-[#23D2E2] text-[#AFB0C0] hover:text-white px-5 py-3.5 rounded-[10px] cursor-pointer mb-1.25 duration-400 transition-all
+  }
 }

@@ -1,14 +1,7 @@
 "use client";
 import React from "react";
-import {
-  Menu,
-  Ellipsis,
-  Search,
-  ShoppingCart,
-  MessageCircle,
-  Bell,
-  Settings,
-} from "lucide-react";
+import { IoMenu, IoSearch} from "react-icons/io5";
+import { HiDotsHorizontal } from "react-icons/hi";
 
 const Header = () => {
   return (
@@ -21,7 +14,7 @@ const Header = () => {
           <h2 className="font-poppins text-white text-xs font-bold">Socinex</h2>
         </div>
 
-              <button className="text-white"><Menu /></button>
+              <button className="text-white"><IoMenu /></button>
 
         {/* Menu */}
         <div className="hidden lg:block max-w-88">
@@ -31,7 +24,7 @@ const Header = () => {
             <li className="menu"><a href="">Store</a></li>
             <li className="menu"><a href="">FAQ</a></li>
             <li className="text-white">
-              <Ellipsis />
+              <HiDotsHorizontal />
             </li>
           </ul>
         </div>
@@ -44,7 +37,7 @@ const Header = () => {
             type="text"
           />
           <div className="absolute text-[#6763DF] top-[30%] right-6.5 w-3.5 h-3.5">
-            <Search />
+            <IoSearch />
           </div>
         </div>
 
