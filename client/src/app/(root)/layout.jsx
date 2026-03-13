@@ -6,8 +6,11 @@ export default function MainLayout({ children }) {
   return (
     <main>
       <Header/>
-      <ProfileSidebar/>
+      <div className="grid grid-cols-3 bg-[#F5F5F5]">
+        <ProfileSidebar/>
       {children}
+      </div>
+      
     </main>
   );
 }

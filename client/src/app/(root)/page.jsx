@@ -1,9 +1,12 @@
 "use client"
+import ProfileHeader from '@/components/Home/ProfileHeader'
 import React from 'react'
 
 const page = () => {
   return (
-    <div><h1>Home page lore</h1></div> 
+    <div>
+      <ProfileHeader/>
+    </div> 
   )
 }
 
