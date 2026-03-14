@@ -21,4 +21,7 @@
   .profile-header-btn {
     @apply bg-[#615DFA] hover:bg-[#23D2E2] text-white px-13 py-3.5 rounded-[7px] font-poppins font-semibold text-sm duration-400 transition-all
   }
+  .settingsbar{
+    @apply w-10.5 mx-auto h-10.5 mt-2 bg-[#4E4AC8] rounded-full border-2 border-[#D9D9D9]
+  }
 }
