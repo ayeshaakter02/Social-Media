@@ -21,7 +21,7 @@ export default function ProfileHeader() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex items-center justify-between pl-16.25 pt-16.25 pr-28.5 pb-5.5">
+        <div className="bg-white flex items-center justify-between pl-16.25 pt-16.25 pr-28.5 pb-5.5">
           {/* Stats */}
           <div className="flex justify-center gap-6 text-center font-poppins">
             <div>
