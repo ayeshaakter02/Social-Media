@@ -10,36 +10,39 @@ import {
 import { BsThreeDots } from "react-icons/bs";
 import { MdSentimentSatisfied } from "react-icons/md";
 import { RiEmotionLaughLine } from "react-icons/ri";
+import { HiDotsHorizontal } from "react-icons/hi";
+
 
 export default function PostCard() {
   return (
-    <div className="max-w-xl mx-auto bg-white rounded-xl shadow p-4">
+    <div className="max-w-146.25 mx-auto bg-white rounded-2xl shadow p-5 ml-3.75 mt-8.25 font-poppins">
 
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-purple-500"></div>
+          <div className="w-12.5 h-12.5 border-3 border-[#D9D9D9] rounded-full bg-[#615DFA]"></div>
 
-          <div>
-            <h3 className="font-semibold text-sm">
+          <div className="ml-3.75">
+            <h3 className="font-bold text-sm ">
               A B M Shawon Islam
             </h3>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-[#AFB0C0] font-medium">
               29 minutes ago
             </p>
           </div>
         </div>
 
-        <BsThreeDots className="text-gray-500 text-xl cursor-pointer" />
+        <HiDotsHorizontal className='font-poppins font-normal text-[30px]'/>
       </div>
 
       {/* Post Text */}
-      <p className="text-sm text-gray-700 mt-3 leading-relaxed">
-        I have great news to share with you all! I've been officially made a
-        game streaming verified partner by Streamy. I'll be uploading new
-        content every day, improving the quality and I'm gonna have access
-        to games a month before release.
+      <p className="text-sm text-gray-700 mt-5.75 leading-relaxed font-normal mb-7.25">
+        I have great news to share with you all! I’ve been officially made a game streaming verified partner by Streamy http://lyt.ly/snej25. What does this mean? I’ll be uploading new content every day, improving the quality and I’m gonna have access to games a month before the official release.
+
+This is a dream come true, thanks to all for the support!!!
       </p>
+      {/* border */}
+            <div className="flex justify-between text-sm text-[#D9D9D9] mt-3 border-b pb-3"></div>
 
       {/* Reaction Icons */}
       <div className="flex items-center gap-2 mt-4">
