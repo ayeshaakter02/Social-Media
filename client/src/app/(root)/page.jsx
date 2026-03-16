@@ -5,6 +5,7 @@ import PostCard from "@/components/Home/PostCard";
 import ProfileHeader from "@/components/common/ProfileHeader";
 import Videos from "@/components/common/Videos";
 import React from "react";
+import PostReact from "@/components/Home/PostReact";
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
         </div>
         <div>
           <PostCard />
+          <PostReact/>
         </div>
       </div>
     </div>

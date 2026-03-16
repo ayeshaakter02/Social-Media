@@ -8,7 +8,7 @@ const Aboutme = () => {
         <h2 className='font-poppins font-bold text-sm text-[#3E3F5E]'>About Me</h2>
         <HiDotsHorizontal className='font-poppins font-bold text-sm text-[#3E3F5E]'/>
       </div>
-      <p className='font-poppins font-normal text-xs text-[#AFB0C0] mt-7.25 mb-4.5'>Hi! My name is A B M Shawon Islam but some people may know me as GameHuntress! I have a Twitch channel where I stream, play and review all the newest games.</p>
+      <p className='font-poppins font-normal text-xs text-[#AFB0C0] mt-7.25 mb-4.5'>Hi! My name is Ayesha Akter. I am a web development learner passionate about creating modern, responsive, and user-friendly websites.</p>
       <div className='font-poppins text-xs text-[#AFB0C0] flex w-45.75 justify-between'>
         <p className='font-bold'>Joined:</p>
         <p className='font-normal'>22 November 2008</p>
