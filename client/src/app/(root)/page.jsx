@@ -17,7 +17,7 @@ const page = () => {
           <Videos />
         </div>
         <div>
-      <PostCard/>
+          <PostCard />
         </div>
       </div>
     </div>
