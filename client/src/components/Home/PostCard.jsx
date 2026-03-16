@@ -21,7 +21,7 @@ export default function PostCard() {
       {/* post status */}
       <Status />
       {/* border */}
-      <div className="flex justify-between text-sm text-[#D9D9D9] mt-3.75 border-b -ml-5 w-146.25"></div>
+      <div className="post-border"></div>
       {/* Actions */}
       <Action />
     </div>

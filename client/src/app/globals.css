@@ -24,4 +24,7 @@
   .settingsbar{
     @apply w-10.5 mx-auto h-10.5 mt-2 bg-[#4E4AC8] rounded-full border-2 border-[#D9D9D9]
   }
+  .post-border {
+    @apply flex justify-between text-sm text-[#D9D9D9] mt-3.75 border-b -ml-5 w-146.25
+  }
 }

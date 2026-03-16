@@ -8,10 +8,10 @@ const Participants = () => {
                 <div className="flex gap-5.5 ">
                     <div className="flex gap-3.25 items-center ml-3">
               <div className="flex items-center">
-                <div className="flex items-center absolute justify-center w-5 h-5 rounded-full bg-red-500 text-white">
+                <div className="flex items-center absolute justify-center w-5 h-5 rounded-full bg-linear-to-b from-[#fc6666] to-[#df0000] text-white">
                   <FaHeart className="w-2.5" />
                 </div>
-                <div className="-ml-3 z-10 flex items-center justify-center w-5 h-5 rounded-full bg-[#30e6f3]  text-white">
+                <div className="-ml-3 z-10 flex items-center justify-center w-5 h-5 rounded-full bg-linear-to-b from-[#97edf3] to-[#01bac7]  text-white">
                   <FaThumbsUp className="w-2.5 " />
                 </div>
                 <div className="ml-1 text-yellow-400 w-5 h-5 rounded-full bg-black">

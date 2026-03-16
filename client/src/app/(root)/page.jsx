@@ -1,11 +1,10 @@
 "use client";
 import Aboutme from "@/components/common/Aboutme";
 import Photos from "@/components/common/Photos";
-import PostCard from "@/components/Home/PostCard";
 import ProfileHeader from "@/components/common/ProfileHeader";
 import Videos from "@/components/common/Videos";
 import React from "react";
-import PostReact from "@/components/Home/PostReact";
+import HomePages from "@/Pages/HomePages";
 
 const page = () => {
   return (
@@ -18,8 +17,7 @@ const page = () => {
           <Videos />
         </div>
         <div>
-          <PostCard />
-          <PostReact/>
+          <HomePages/>
         </div>
       </div>
     </div>
