@@ -4,10 +4,8 @@ import { HiDotsHorizontal } from "react-icons/hi";
 import Participants from "./Participants";
 import Action from "./Action";
 import Content from "./Content";
-import { FaThumbsUp } from "react-icons/fa";
-import { BsFillEmojiSurpriseFill } from "react-icons/bs";
 
-const PostVideos = () => {
+const PostImage = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="max-w-146.25 mx-auto bg-white rounded-2xl shadow ml-3.75 mt-8.25 font-poppins  py-5">
@@ -22,9 +20,7 @@ const PostVideos = () => {
         </div>
       </div>
       {/* Upload a video  */}
-      <div className="bg-[#7A77FD] py-31.25 px-60.5 mb-3.75">
-        <img className="w-25 h-25" src="./images/play.png" alt="" />
-      </div>
+      <div className="bg-[#7A77FD] w-146 h-86.25 mb-3.75"></div>
       <div className="pl-5">
         {/* border */}
         <div className="flex justify-between text-sm text-[#D9D9D9] border-b"></div>
@@ -39,4 +35,4 @@ const PostVideos = () => {
   );
 };
 
-export default PostVideos;
+export default PostImage;
