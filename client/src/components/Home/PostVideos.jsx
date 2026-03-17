@@ -7,7 +7,7 @@ import Content from "./Content";
 import { FaThumbsUp } from "react-icons/fa";
 import { BsFillEmojiSurpriseFill } from "react-icons/bs";
 
-const Videos = () => {
+const PostVideos = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="max-w-146.25 mx-auto bg-white rounded-2xl shadow ml-3.75 mt-8.25 font-poppins">
@@ -39,4 +39,4 @@ const Videos = () => {
   );
 };
 
-export default Videos;
+export default PostVideos;
