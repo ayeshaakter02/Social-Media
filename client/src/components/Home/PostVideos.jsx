@@ -1,22 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Creator from "./Creator";
-import { HiDotsHorizontal } from "react-icons/hi";
 import Participants from "./Participants";
 import Action from "./Action";
 import Content from "./Content";
-import { FaThumbsUp } from "react-icons/fa";
-import { BsFillEmojiSurpriseFill } from "react-icons/bs";
 
 const PostVideos = () => {
-  const [open, setOpen] = useState(false);
   return (
-    <div className="max-w-146.25 mx-auto bg-white rounded-2xl shadow ml-3.75 mt-8.25 font-poppins  py-5">
+    <div className="max-w-146.25 mx-auto bg-white rounded-2xl ml-3.75 mt-8.25 font-poppins  py-5">
       <div className=" pl-5">
         <div>
           {/* Header */}
-          <div className="flex items-center justify-between">
             <Creator />
-          </div>
           {/* Post Text */}
           <Content />
         </div>

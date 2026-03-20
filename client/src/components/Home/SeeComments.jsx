@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Creator from "./Creator";
 import { HiDotsHorizontal } from "react-icons/hi";
 import Participants from "./Participants";
@@ -8,41 +8,12 @@ import { FaThumbsUp } from "react-icons/fa";
 import { BsFillEmojiSurpriseFill } from "react-icons/bs";
 
 const SeeComments = () => {
-  const [open, setOpen] = useState(false);
+
   return (
-    <div className="max-w-146.25 mx-auto bg-white rounded-2xl shadow p-5 ml-3.75 mt-8.25 font-poppins">
+    <div className="max-w-146.25 mx-auto bg-white rounded-2xl p-5 ml-3.75 mt-8.25 font-poppins">
       <div>
         {/* Header */}
-        <div className="flex items-center justify-between">
-          <Creator />
-          <div className="relative inline-block">
-            {/* Button */}
-            <HiDotsHorizontal
-              onClick={() => setOpen(!open)}
-              className="text-[30px] cursor-pointer"
-            />
-
-            {/* Dropdown */}
-            {open && (
-              <div className="absolute right-0 mt-2 w-40 font-poppins text-xs font-normal rounded-xl bg-white shadow-[0px_1px_4px_1px_rgba(0,0,0,0.16)]">
-                <ul className="py-4 pl-4">
-                  <li className="hover:bg-gray-100 cursor-pointer">
-                    Edit Post
-                  </li>
-                  <li className="hover:bg-gray-100 cursor-pointer my-1.5">
-                    Delete Post
-                  </li>
-                  <li className="hover:bg-gray-100 cursor-pointer mb-1.5">
-                    Report Post
-                  </li>
-                  <li className="hover:bg-gray-100 cursor-pointer">
-                    Report Author
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
-        </div>
+        <Creator/>
         {/* Post Text */}
         <Content />
         {/* border */}

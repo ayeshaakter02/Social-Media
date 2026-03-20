@@ -5,8 +5,10 @@ import { MdEmojiEmotions } from "react-icons/md";
 import {
   BsFillEmojiAngryFill,
   BsFillEmojiDizzyFill,
+  BsFillEmojiSurpriseFill,
   BsFillEmojiTearFill,
 } from "react-icons/bs";
+import { useState } from "react";
 
 const reactions = [
   {
@@ -46,11 +48,20 @@ const reactions = [
     ),
   },
   {
+    type: "care",
+    label: "Care",
+    emoji: (
+      <div className=" text-yellow-400 text-[40px] rounded-full bg-black">
+        <BsFillEmojiDizzyFill />
+      </div>
+    ),
+  },
+  {
     type: "wow",
     label: "Wow",
     emoji: (
       <div className=" text-yellow-400 text-[40px] rounded-full bg-black">
-        <BsFillEmojiDizzyFill />
+        <BsFillEmojiSurpriseFill />
       </div>
     ),
   },
@@ -75,24 +86,39 @@ const reactions = [
 ];
 
 const ReactionPanel = ({ onSelect }) => {
+  const [hovered, setHovered] = useState(null);
   return (
     <motion.div
       initial={{ opacity: 0, y: 10, scale: 0.9 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: 10, scale: 0.9 }}
       transition={{ duration: 0.2 }}
-      className="flex gap-2 bg-white shadow-xl rounded-full w-102 px-3 py-3 mb-10.5"
+      className="flex justify-center gap-2 bg-white shadow-xl rounded-full w-102  py-3 mb-10.5 z-9999"
     >
-      {reactions.map((r, i) => (
-        <motion.span
+      {reactions.map((r) => (
+        <div
           key={r.type}
-          onClick={() => onSelect(r)}
-          whileHover={{ scale: 1, y: -4 }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="text-xl cursor-pointer"
+          className="relative flex flex-col items-center"
+          onMouseEnter={() => setHovered(r.type)}
+          onMouseLeave={() => setHovered(null)}
         >
-          {r.emoji}
-        </motion.span>
+          {/* Tooltip */}
+          {hovered === r.type && (
+            <div className="absolute -top-7 px-2.75 py-1 text-xs text-white bg-[#45437F] rounded-[22px] whitespace-nowrap font-normal font-poppins">
+              {r.label}
+            </div>
+          )}
+
+          {/* Emoji */}
+          <motion.div
+            onClick={() => onSelect(r)}
+            whileHover={{ scale: 1, y: -4 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="cursor-pointer text-2xl"
+          >
+            {r.emoji}
+          </motion.div>
+        </div>
       ))}
     </motion.div>
   );

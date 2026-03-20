@@ -42,7 +42,7 @@ const Action = () => {
         {/* Reaction Panel */}
         <AnimatePresence>
           {show && (
-            <div className="absolute bottom-full mb-2">
+            <div className="absolute bottom-full mb-2 z-9999">
               <ReactionPanel
                 onSelect={(r) => {
                   setSelected(r);

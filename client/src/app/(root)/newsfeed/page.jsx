@@ -3,12 +3,13 @@ import Aboutme from '@/components/common/Aboutme'
 import Photos from '@/components/common/Photos'
 import ProfileHeader from '@/components/common/ProfileHeader'
 import Videos from '@/components/common/Videos'
+import CreatePost from '@/components/single/CreatePost'
 import HomePages from '@/Pages/HomePages'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className='mb-154.25'>
       <ProfileHeader />
       <div className="flex">
         <div>
@@ -17,6 +18,7 @@ const page = () => {
           <Videos />
         </div>
         <div>
+          <CreatePost/>
           <HomePages/>
         </div>
       </div>
