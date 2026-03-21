@@ -2,6 +2,7 @@
 import React from "react";
 import { IoMenu, IoSearch} from "react-icons/io5";
 import { HiDotsHorizontal } from "react-icons/hi";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -9,10 +10,10 @@ const Header = () => {
       <div className="w-full flex items-center justify-between">
 
         {/* Logo */}
-        <div className="flex gap-3 items-center">
+        <Link  href="/" className="flex gap-3 items-center">
           <img src="./images/logo.svg" alt="" />
           <h2 className="font-poppins text-white text-xs font-bold">Socinex</h2>
-        </div>
+        </Link>
 
               <button className="text-white"><IoMenu /></button>
 

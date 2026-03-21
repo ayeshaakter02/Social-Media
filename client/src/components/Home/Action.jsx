@@ -22,7 +22,7 @@ const Action = () => {
   };
 
   return (
-    <div className="flex gap-39.25 text-gray-600 mt-6.5 text-sm">
+    <div className="flex gap-39.25 text-gray-600 mt-6 text-sm">
       
       <div
         className="relative flex flex-col items-start"
@@ -42,7 +42,7 @@ const Action = () => {
         {/* Reaction Panel */}
         <AnimatePresence>
           {show && (
-            <div className="absolute bottom-full mb-2 z-9999">
+            <div className="absolute bottom-full mb-5.5 z-9999">
               <ReactionPanel
                 onSelect={(r) => {
                   setSelected(r);

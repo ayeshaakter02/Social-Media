@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaNewspaper, FaGopuram, FaLayerGroup, FaAlgolia, FaUserFriends, FaAmericanSignLanguageInterpreting,   FaSignOutAlt } from "react-icons/fa";
 
 export default function ProfileSidebar() {
@@ -49,41 +50,41 @@ export default function ProfileSidebar() {
 
         <ul className="space-y-2 text-sm">
 
-          <li className="profile-menu">
+          <Link href="/newsfeed" className="profile-menu">
             <FaNewspaper />
             <span  className="ml-7.25">Newsfeed</span>
-          </li>
+          </Link>
 
           {/* Active Menu */}
-          <li className="profile-menu">
+          <Link href="/vidoes" className="profile-menu">
             <FaGopuram />
             <span className="ml-7.25">Videos</span>
-          </li>
+          </Link>
 
-          <li className="profile-menu">
+          <Link href="/group" className="profile-menu">
             <FaLayerGroup />
             <span className="ml-7.25">Groups</span>
-          </li>
+          </Link>
 
-          <li className="profile-menu">
+          <Link href="/photos" className="profile-menu">
             <FaAlgolia />
             <span className="ml-7.25">Photos</span>
-          </li>
+          </Link>
 
-          <li className="profile-menu">
+          <Link href="/friends" className="profile-menu">
             <FaUserFriends />
             <span className="ml-7.25">Friends</span>
-          </li>
+          </Link>
 
-          <li className="profile-menu">
+          <Link href="/friends-request" className="profile-menu">
             <FaAmericanSignLanguageInterpreting />
             <span className="ml-7.25">Friends Request</span>
-          </li>
+          </Link>
 
-          <li className="profile-menu">
+          <Link href="/logout" className="profile-menu">
             <FaSignOutAlt />
             <span className="ml-7.25">Logout</span>
-          </li>
+          </Link>
 
         </ul>
 
