@@ -13,7 +13,7 @@ const Aboutme = () => {
         <p className='font-bold'>Joined:</p>
         <p className='font-normal'>22 November 2008</p>
       </div>
-      <div className='font-poppins text-xs text-[#AFB0C0] flex w-23.25 justify-between'>
+      <div className='font-poppins text-xs text-[#AFB0C0] flex w-23.25 justify-between my-4.5'>
         <p className='font-bold'>City:</p>
         <p className='font-normal'>Dhaka</p>
       </div>
