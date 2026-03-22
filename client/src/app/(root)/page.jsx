@@ -16,7 +16,7 @@ const page = () => {
           <Photos />
           <Videos />
         </div>
-        <div>
+        <div className='ml-3.75 '>
           <HomePages/>
         </div>
       </div>

@@ -10,7 +10,7 @@ import { BsFillEmojiSurpriseFill } from "react-icons/bs";
 const SeeComments = () => {
 
   return (
-    <div className="max-w-146.25 mx-auto bg-white rounded-2xl p-5 ml-3.75 mt-8.25 font-poppins">
+    <div className="max-w-146.25 mx-auto bg-white rounded-2xl p-5 mt-8.25 font-poppins">
       <div>
         {/* Header */}
         <Creator/>

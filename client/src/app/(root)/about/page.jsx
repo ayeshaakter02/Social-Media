@@ -1,9 +1,10 @@
 "use client"
+import InfoCard from '@/components/About/InfoCard'
 import PersonalInfo from '@/components/About/PersonalInfo'
+import ProfileInfo from '@/components/About/ProfileInfo'
 import Aboutme from '@/components/common/Aboutme'
 import ProfileHeader from '@/components/common/ProfileHeader'
-import CreatePost from '@/components/Newsfeed/CreatePost'
-import HomePages from '@/Pages/HomePages'
+
 import React from 'react'
 
 const page = () => {
@@ -15,7 +16,9 @@ const page = () => {
           <Aboutme />
           <PersonalInfo/>
         </div>
-        
+        <div>
+          <ProfileInfo/>
+        </div>
       </div>
     </div>
   )

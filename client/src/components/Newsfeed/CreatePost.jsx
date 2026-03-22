@@ -13,7 +13,7 @@ const CreatePost = () => {
   const [text, setText] = useState("");
 
   return (
-    <div className="max-w-146.25 mx-auto bg-white rounded-[15px] ml-3.75 mt-8.25 font-poppins">
+    <div className="max-w-146.25 mx-auto bg-white rounded-[15px] mt-8.25 font-poppins">
       {/* Tabs */}
       <div className="flex">
         <div
