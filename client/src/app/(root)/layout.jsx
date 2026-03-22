@@ -7,7 +7,7 @@ export default function MainLayout({ children }) {
   return (
     <main>
       <Header />
-      <div className="flex justify-between bg-[#F5F5F5]">
+      <div className="flex justify-between">
         <ProfileSidebar />
         {children}
         <Settingsbar />

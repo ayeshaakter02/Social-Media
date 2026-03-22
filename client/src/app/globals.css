@@ -1,33 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  --font-poppins: 'Poppins', sans-serif;
-  --font-inter: 'Inter', sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @layer components {
+  body {
+    @apply bg-[#F5F5F5]
+  }
   .poppins {
     font-family: var(--font-poppins);
   }
   .inter {
     font-family: var(--font-inter);
   }
-  .menu{
-    @apply font-poppins font-bold text-sm text-white
+  .menu {
+    @apply font-poppins font-bold text-sm text-white;
   }
   .profile-menu {
-    @apply max-w-67 flex items-center hover:bg-[#23D2E2] text-[#AFB0C0] hover:text-white px-5 py-3.5 rounded-[10px] cursor-pointer mb-1.25 duration-400 transition-all
+    @apply max-w-67 flex items-center hover:bg-[#23D2E2] text-[#AFB0C0] hover:text-white px-5 py-3.5 rounded-[10px] cursor-pointer mb-1.25 duration-400 transition-all;
   }
   .profile-header-btn {
-    @apply bg-[#615DFA] hover:bg-[#23D2E2] text-white px-13 py-3.5 rounded-[7px] font-poppins font-semibold text-sm duration-400 transition-all
+    @apply bg-[#615DFA] hover:bg-[#23D2E2] text-white px-13 py-3.5 rounded-[7px] font-poppins font-semibold text-sm duration-400 transition-all;
   }
-  .settingsbar{
-    @apply w-10.5 mx-auto h-10.5 mt-2 bg-[#4E4AC8] rounded-full border-2 border-[#D9D9D9]
+  .settingsbar {
+    @apply w-10.5 mx-auto h-10.5 mt-2 bg-[#4E4AC8] rounded-full border-2 border-[#D9D9D9];
   }
   .post-border {
-    @apply flex justify-between text-sm text-[#D9D9D9] mt-3.75 border-b -ml-5 w-146.25
+    @apply flex justify-between text-sm text-[#D9D9D9] mt-3.75 border-b -ml-5 w-146.25;
   }
   .input {
-  @apply w-66.5 font-inter text-xs font-normal text-[#D9D9D9] pl-2.5 pt-1.75 pb-2 rounded-[5px] border border-[#D9D9D9] hover:text-black;
-}
+    @apply w-66.5 font-inter text-xs font-normal text-[#D9D9D9] pl-2.5 pt-1.75 pb-2 rounded-[5px] border border-[#D9D9D9] hover:text-black;
+  }
+  .profile-card {
+    @apply flex-1 pt-2.25 pb-2 bg-[#615DFA] hover:bg-[#23D2E2] text-white font-semibold text-[13px] duration-400 transition-all
+  }
 }

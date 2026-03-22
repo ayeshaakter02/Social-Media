@@ -3,7 +3,7 @@ import Aboutme from '@/components/common/Aboutme'
 import Photos from '@/components/common/Photos'
 import ProfileHeader from '@/components/common/ProfileHeader'
 import Videos from '@/components/common/Videos'
-import CreatePost from '@/components/single/CreatePost'
+import CreatePost from '@/components/Newsfeed/CreatePost'
 import HomePages from '@/Pages/HomePages'
 import React from 'react'
 

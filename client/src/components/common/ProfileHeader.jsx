@@ -45,13 +45,13 @@ export default function ProfileHeader() {
           </div>
 
           {/* Name */}
-          <div className="text-center ml-4 font-poppins">
+          <div className="text-center ml-12 font-poppins">
             <h2 className="font-bold text-base">Ayesha Akter</h2>
-            <p className="text-xs text-[#AFB0C0] font-medium">www.abm.com</p>
+            <p className="text-xs text-[#AFB0C0] font-medium">www.ayesha.com</p>
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-3">
+          <div className="flex gap-3 mr-8">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">
               <FaFacebook />
             </div>
