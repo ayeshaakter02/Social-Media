@@ -1,6 +1,6 @@
-import ProductCard from "./ProductCard";
+import ProductCard from "../common/ProductCard";
 
-const ProductGrid = () => {
+const StoreGrid = () => {
   return (
     <div className="w-296 pt-5">
       <div className="grid grid-cols-4 gap-5.25">
@@ -12,4 +12,4 @@ const ProductGrid = () => {
   );
 };
 
-export default ProductGrid;
+export default StoreGrid;
