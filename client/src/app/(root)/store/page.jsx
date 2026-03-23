@@ -1,6 +1,6 @@
 import MarketPlace from '@/components/common/MarketPlace'
 import Pagenation from '@/components/Store/Pagenation'
-import ProductGrid from '@/components/Store/SotreGrid'
+import ProductGrid from '@/components/Store/StoreGrid'
 import StoreHeader from '@/components/Store/StoreHeader'
 import React from 'react'
 

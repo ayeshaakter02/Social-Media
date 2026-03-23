@@ -3,7 +3,7 @@ import { FaChevronDown, FaSearch } from "react-icons/fa";
 
 const ProductHeader = () => {
   return (
-    <div className="mt-5.75 font-poppins">
+    <div className="mt-5.75 mb-5 font-poppins">
       <div>
         <p className="font-normal text-sm text-[#AFB0C0]">BROWSE PRODUTS</p>
         <h2 className="font-medium text-2xl text-[#24234B] mt-1">
@@ -20,7 +20,7 @@ const ProductHeader = () => {
           <FaSearch className="w-6.25 h-6.25" />
         </button>
         {/* Dropdown 1 */}
-      <div className="w-75 border border-[#D9D9D9] outline-none rounded-[15px] flex items-center gap-26.5 px-5 pt-2.5 pb-2.25 text-[17px] font-medium whitespace-nowrap cursor-pointer mx-[19px]">
+      <div className="w-75 border border-[#D9D9D9] outline-none rounded-[15px] flex items-center gap-26.5 px-5 pt-2.5 pb-2.25 text-[17px] font-medium whitespace-nowrap cursor-pointer mx-4.75">
         <span>Date Published</span>
         <FaChevronDown className="w-6.25 h-6.25" />
       </div>
