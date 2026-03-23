@@ -54,10 +54,10 @@ const ProfileCard = () => {
 
       {/* Buttons */}
       <div className="flex">
-        <button className="profile-card  border-r border-[#23D2E2]">
+        <button className="profile-card border-r border-[#23D2E2]">
           Add Friend
         </button>
-        <button className="profile-card">
+        <button className="profile-card pb-3">
           Send Message
         </button>
       </div>

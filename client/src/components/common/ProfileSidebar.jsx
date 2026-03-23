@@ -20,7 +20,7 @@ export default function ProfileSidebar() {
       {/* Profile Info */}
       <div className="text-center mt-15 px-4 font-poppins">
         <h2 className="font-bold text-base">Ayesha Akter</h2>
-        <p className="text-xs text-[#AFB0C0] font-medium">www.abm.com</p>
+        <p className="text-xs text-[#AFB0C0] font-medium">www.ayesha.com</p>
       </div>
 
       {/* Stats */}
