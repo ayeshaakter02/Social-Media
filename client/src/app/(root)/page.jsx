@@ -8,7 +8,7 @@ import HomePages from "@/Pages/HomePages";
 
 const page = () => {
   return (
-    <div>
+    <div className="mb-10">
       <ProfileHeader />
       <div className="flex">
         <div>
