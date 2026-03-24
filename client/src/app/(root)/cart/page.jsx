@@ -8,7 +8,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-9 mx-auto">
+    <div className="mt-9 mx-auto mb-29">
       <MarketPlace />
       <CartHeader />
       <ItemHeader/>
