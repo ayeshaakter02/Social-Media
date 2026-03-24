@@ -43,6 +43,9 @@
     @apply w-19.75 py-3.5 rounded-[15px] border border-[#D9D9D9] focus:outline-none text-sm font-medium text-[#D9D9D9]
   }
   .orderSummary-btn {
-    @apply hover:bg-[#23D2E2] bg-transparent text-[#AFB0C0] hover:text-white border border-[#D9D9D9] hover:border-[#23D2E2] py-3.75 w-57 flex justify-center rounded-[15px] font-medium text-xs transition-all duration-400
+    @apply hover:bg-[#23D2E2] bg-transparent text-[#AFB0C0] hover:text-white border border-[#D9D9D9] hover:border-[#23D2E2] py-3.75 w-57 flex justify-center rounded-[15px] font-medium text-xs transition-all duration-400 mx-auto
+  }
+  .checkoutOrderSum-input {
+    @apply w-full pl-5.5 pt-3.5 pb-3.25 rounded-[15px] border border-[#AFB0C0] text-[#AFB0C0] text-sm font-medium focus:outline-none
   }
 }

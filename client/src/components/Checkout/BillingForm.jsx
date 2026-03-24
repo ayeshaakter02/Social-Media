@@ -1,91 +1,72 @@
 "use client";
-import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
-export default function BillingForm() {
+const BillingForm = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="w-full max-w-3xl bg-gray-200 rounded-2xl p-6 shadow-sm">
-        
-        <h2 className="text-xl font-semibold mb-4 text-gray-700">
-          Billing Details
-        </h2>
+    <div className="w-196 bg-white rounded-[15px] px-8 pt-8 pb-7.5 font-poppins">
+      <h2 className="text-lg font-medium mb-8">Billing Details</h2>
 
-        {/* Grid Form */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Grid Form */}
+      <div className="grid grid-cols-2 gap-3">
+        {/* First Name */}
+        <input
+          type="text"
+          placeholder="First name"
+          className="checkoutOrderSum-input"
+        />
 
-          {/* First Name */}
-          <div className="relative">
-            <FaUser className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="text"
-              placeholder="First name"
-              className="w-full pl-10 pr-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
-            />
-          </div>
+        {/* Last Name */}
+        <input
+          type="text"
+          placeholder="Last name"
+          className="checkoutOrderSum-input"
+        />
 
-          {/* Last Name */}
-          <div className="relative">
-            <FaUser className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Last name"
-              className="w-full pl-10 pr-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
-            />
-          </div>
+        {/* Email */}
+        <input
+          type="email"
+          placeholder="Email"
+          className="checkoutOrderSum-input my-2.5"
+        />
 
-          {/* Email */}
-          <div className="relative">
-            <FaEnvelope className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full pl-10 pr-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
-            />
-          </div>
+        {/* Phone */}
+        <input
+          type="text"
+          placeholder="Phone number"
+          className="checkoutOrderSum-input my-2.5"
+        />
 
-          {/* Phone */}
-          <div className="relative">
-            <FaPhone className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Phone number"
-              className="w-full pl-10 pr-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
-            />
-          </div>
-
-          {/* Full Address */}
-          <div className="relative md:col-span-2">
-            <FaMapMarkerAlt className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Full address"
-              className="w-full pl-10 pr-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
-            />
-          </div>
-
-          {/* City */}
+        {/* Full Address */}
+        <div className="col-span-2">
           <input
             type="text"
-            placeholder="New York"
-            className="w-full px-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
+            placeholder="Full address"
+            className="checkoutOrderSum-input"
           />
-
-          {/* ZIP Code */}
-          <input
-            type="text"
-            placeholder="ZIP Code"
-            className="w-full px-3 py-2 rounded-full border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
-          />
-
-          {/* Textarea */}
-          <textarea
-            rows="4"
-            placeholder="Write any additional details here..."
-            className="md:col-span-2 w-full px-3 py-3 rounded-2xl border border-gray-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-400 resize-none"
-          ></textarea>
-
         </div>
+
+        {/* City */}
+        <input
+          type="text"
+          placeholder="New York"
+          className="checkoutOrderSum-input my-2.5"
+        />
+
+        {/* ZIP Code */}
+        <input
+          type="text"
+          placeholder="ZIP Code"
+          className="checkoutOrderSum-input my-2.5"
+        />
+
+        {/* Textarea */}
+        <textarea
+          rows="4"
+          placeholder="Write any additional details here..."
+          className="checkoutOrderSum-input col-span-2 pt-[14.55px]"
+        ></textarea>
       </div>
     </div>
   );
-}
+};
+
+export default BillingForm;

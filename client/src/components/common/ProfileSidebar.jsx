@@ -5,7 +5,7 @@ import { FaNewspaper, FaGopuram, FaLayerGroup, FaAlgolia, FaUserFriends, FaAmeri
 
 export default function ProfileSidebar() {
   return (
-    <div className="w-75 min-h-screen bg-white">
+    <div className="w-75 bg-white">
 
       {/* Cover */}
       <div className="bg-[#45437F] h-18.75 relative">
