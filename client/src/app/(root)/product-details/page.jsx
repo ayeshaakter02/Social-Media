@@ -1,6 +1,7 @@
 import MarketPlace from '@/components/common/MarketPlace'
 import ProductHeader from '@/components/ProductDetails/ProductHeader'
 import ProductPreview from '@/components/ProductDetails/ProductPreview'
+import ProductTabs from '@/components/ProductDetails/ProductTabs'
 import React from 'react'
 
 const page = () => {
@@ -9,6 +10,7 @@ const page = () => {
         <MarketPlace/>
         <ProductHeader/>
         <ProductPreview/>
+        <ProductTabs/>
     </div>
   )
 }
