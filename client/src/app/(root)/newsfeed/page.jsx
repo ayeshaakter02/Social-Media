@@ -4,6 +4,7 @@ import Photos from '@/components/common/Photos'
 import ProfileHeader from '@/components/common/ProfileHeader'
 import Videos from '@/components/common/Videos'
 import CreatePost from '@/components/Newsfeed/CreatePost'
+import PostPhotos from '@/components/Newsfeed/PostPhotos'
 import HomePages from '@/Pages/HomePages'
 import React from 'react'
 
@@ -20,6 +21,7 @@ const page = () => {
         <div className='ml-3.75 '>
           <CreatePost/>
           <HomePages/>
+          <PostPhotos/>
         </div>
       </div>
     </div>
