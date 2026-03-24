@@ -66,29 +66,29 @@ const Header = () => {
             <li className="w-8 h-px bg-[#7A77FD] rotate-90"></li>
 
             <li className="w-4.5 h-4.5 text-[#7A77FD]">
-              <a href="">
+              <Link href="/cart">
                 <img src="./images/shopping-cart.svg" alt="" />
-              </a>
+              </Link>
             </li>
 
             <li className="w-4.5 h-4.5 text-[#7A77FD]">
-              <a href="">
+              <Link href="sms">
                 <img src="./images/sms.svg" alt="" />
-              </a>
+              </Link>
             </li>
 
             <li className="w-4.5 h-4.5 text-[#7A77FD]">
-              <a href="">
+              <Link href="notification">
                 <img src="./images/bell.svg" alt="" />
-              </a>
+              </Link>
             </li>
 
             <li className=" w-8 h-px bg-[#7A77FD] rotate-90"></li>
 
             <li className="w-4.5 h-4.5 text-[#7A77FD]">
-              <a href="">
+              <Link href="settings">
                 <img src="./images/tools.svg" alt="" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
