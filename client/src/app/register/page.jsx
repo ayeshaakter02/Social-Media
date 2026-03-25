@@ -33,7 +33,7 @@ const page = () => {
                     <div className="flex gap-5">
                         <div className='reg-select'>
                             <p className='font-normal text-[17px] leading-4'>Male</p>
-                            <input type="radio" name="payment"/>
+                            <input type="radio" name="payment" />
                         </div>
                         <div className='reg-select'>
                             <p className='font-normal text-[17px] leading-4'>Female</p>
@@ -46,14 +46,13 @@ const page = () => {
                     </div>
                 </div>
                 <Link href={'/'} className='inline-block text-center bg-[#166FE5] rounded-[5px] text-xl w-123.25 font-bold text-white pt-5.5 pb-5.75 mt-10.25 mb-3.75'>Sign Up</Link >
-                    <div className='flex justify-center'>
-                        <a className='text-[#1877F2] font-medium text-sm border-b' href="">Forgotten password?</a>
-                    </div>
+                <div className='flex justify-center'>
+                    <a className='text-[#1877F2] font-medium text-sm border-b' href="">Forgotten password?</a>
+                </div>
                 <div className='my-6.25 w-123.25 border-b border-[#D9D9D9]'></div>
                 <div className='flex justify-center'>
                     <Link href={'/login'} className='font-bold text-xl text-white bg-[#36A420] rounded-[5px] pl-16.75 pr-17 pt-5.5 pb-5.75'>Already have </Link>
                 </div>
-
             </div>
         </div>
     )
