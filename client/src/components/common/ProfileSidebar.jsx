@@ -81,7 +81,7 @@ export default function ProfileSidebar() {
             <span className="ml-7.25">Friends Request</span>
           </Link>
 
-          <Link href="/logout" className="profile-menu">
+          <Link href="/login" className="profile-menu">
             <FaSignOutAlt />
             <span className="ml-7.25">Logout</span>
           </Link>
