@@ -43,7 +43,7 @@ const CreatePost = () => {
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="Hi, Ayesha Akter, Share your post ..."
-              className="w-full h-37.5 bg-transparent font-light text-xs font-inter text-[#AFB0C0] pt-6.25 pl-6.5 "
+              className="w-full h-37.5 bg-transparent font-light text-xs outline-none font-inter text-[#AFB0C0] pt-6.25 pl-6.5 "
             />
           </div>
           <div className="flex items-center justify-between pt-4.25 pb-4.75 border-t border-[#D9D9D9] px-7">
@@ -76,23 +76,23 @@ const CreatePost = () => {
           {/* Inputs */}
           <div className="grid grid-cols-2 gap-2.5">
             <div className="flex relative items-center">
-              <input placeholder="Product name" className="input" />
+              <input placeholder="Product name" className="input outline-none" />
               <IoIosArrowDown className="absolute right-2.5 w-2.5 h-2.5 text-[#D9D9D9]" />
             </div>
-            <input placeholder="$12" className="input" />
+            <input placeholder="$12" className="input outline-none" />
             <div className="flex relative items-center">
-              <input placeholder="Product Category" className="input" />
-              <IoIosArrowDown className="absolute right-2.5 w-2.5 h-2.5 text-[#D9D9D9]" />
-            </div>
-            <div className="flex relative items-center">
-              <input placeholder="Product Color" className="input" />
+              <input placeholder="Product Category" className="input outline-none" />
               <IoIosArrowDown className="absolute right-2.5 w-2.5 h-2.5 text-[#D9D9D9]" />
             </div>
             <div className="flex relative items-center">
-              <input placeholder="Product Size" className="input" />
+              <input placeholder="Product Color" className="input outline-none" />
               <IoIosArrowDown className="absolute right-2.5 w-2.5 h-2.5 text-[#D9D9D9]" />
             </div>
-            <input placeholder="10" className="input" />
+            <div className="flex relative items-center">
+              <input placeholder="Product Size" className="input outline-none" />
+              <IoIosArrowDown className="absolute right-2.5 w-2.5 h-2.5 text-[#D9D9D9]" />
+            </div>
+            <input placeholder="10" className="input outline-none" />
           </div>
           {/* Buttons */}
           <div className="grid grid-cols-2 gap-2.5">
@@ -111,7 +111,7 @@ const CreatePost = () => {
           {/* Description */}
           <textarea
             placeholder="Product Description"
-            className="input w-135.25 h-17.75 pt-2.5"
+            className="input w-135.25 h-17.75 pt-2.5 outline-none"
           />
 
           {/* Additional Info */}

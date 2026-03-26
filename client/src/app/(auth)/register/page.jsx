@@ -1,7 +1,7 @@
+"use client"
 import LogRegister from '@/components/common/LogRegister'
 import Link from 'next/link'
 import React from 'react'
-import { FaRegCircle } from 'react-icons/fa'
 import { IoIosArrowDown } from 'react-icons/io'
 
 const page = () => {
