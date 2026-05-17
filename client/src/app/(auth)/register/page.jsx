@@ -1,5 +1,6 @@
 "use client"
 import LogRegister from '@/components/common/LogRegister'
+import { googleLogin } from '@/services/authService'
 import Link from 'next/link'
 import React from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
@@ -46,6 +47,9 @@ const page = () => {
                     </div>
                 </div>
                 <Link href={'/'} className='inline-block text-center bg-[#166FE5] rounded-[5px] text-xl w-123.25 font-bold text-white pt-5.5 pb-5.75 mt-10.25 mb-3.75'>Sign Up</Link >
+                          <button onClick={googleLogin}>
+      Login with Google
+    </button>
                 <div className='flex justify-center'>
                     <a className='text-[#1877F2] font-medium text-sm border-b' href="">Forgotten password?</a>
                 </div>
